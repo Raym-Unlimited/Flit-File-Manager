@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/monk_app_bg"
+             tools:context=".fragments.CategoriesFragment">
+    <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_grid"
+            android:columnCount="4"
+            android:rowCount="4"
+            android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/action_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_group_19"
+                android:layout_margin="16dp"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_row="0"
+                android:layout_column="0"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/action_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_group_20"
+                android:layout_margin="16dp"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_row="0"
+                android:layout_column="1"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/action_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_group_22"
+                android:contentDescription="@string/action_document"
+                android:layout_margin="16dp"
+                android:layout_row="0"
+                android:layout_column="2"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/action_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_group_23"
+                android:contentDescription="@string/zip_file"
+                android:layout_margin="16dp"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_row="0"
+                android:layout_column="3"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/action_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_group_24"
+                android:layout_margin="16dp"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_row="1"
+                android:layout_column="0"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/action_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_group_21"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_margin="16dp"
+                android:layout_row="1"
+                android:layout_column="1"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/action_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_group_26"
+                android:layout_row="1"
+                android:layout_column="2"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/action_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_group_25"
+                android:layout_margin="16dp"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_row="1"
+                android:layout_column="3"/>
+    </GridLayout>
+</FrameLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/monk_app_bg"
+        tools:context=".activities.filesharing.TransferActivity">
+
+    <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="35dp"
+            android:background="@drawable/ic_arrow_7"/>
+
+    <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="35dp"
+            android:background="@drawable/ellipse_28searcing_activity"
+            app:layout_constraintEnd_toStartOf="@id/txt_available_device"
+            app:layout_constraintTop_toBottomOf="@+id/back_btn"/>
+
+    <TextView
+            android:id="@+id/txt_available_device"
+            android:layout_width="102dp"
+            android:layout_height="18dp"
+            android:text="@string/available_device"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans"
+            app:layout_constraintBottom_toBottomOf="@+id/avatar"
+            app:layout_constraintTop_toTopOf="@+id/avatar"
+            app:layout_constraintStart_toEndOf="@+id/avatar"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ProgressBar
+            android:id="@+id/pb_transferring"
+            android:layout_width="300dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avatar"
+            android:progressDrawable="@drawable/linear_progress"
+            android:progress="70"
+            android:indeterminate="false"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_transferred"
+            android:layout_marginTop="10dp"
+            android:text="Transferred 15.28 MB"
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans"
+            app:layout_constraintTop_toBottomOf="@id/pb_transferring"
+            app:layout_constraintStart_toStartOf="@id/pb_transferring"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_files_transferred"
+            android:layout_marginTop="10dp"
+            android:text="1/2 File"
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans"
+            app:layout_constraintTop_toBottomOf="@id/pb_transferring"
+            app:layout_constraintEnd_toEndOf="@id/pb_transferring"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_received_files"
+            android:layout_marginTop="16dp"
+            android:text="Received 2 file ( 18 MB )"
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans"
+            app:layout_constraintTop_toBottomOf="@+id/txt_transferred"
+            app:layout_constraintStart_toStartOf="@id/pb_transferring"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/pb_transferring"
+            app:layout_constraintStart_toStartOf="@+id/pb_transferring"
+            app:layout_constraintTop_toBottomOf="@+id/txt_received_files"
+            tools:listitem="@layout/rv_available_devices_list_item"
+            tools:itemCount="2"
+            android:id="@+id/recyclerView"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_receiving_files"
+            android:layout_marginTop="16dp"
+            android:text="Receiving 1 file"
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+            app:layout_constraintStart_toStartOf="@id/pb_transferring"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/pb_transferring"
+            app:layout_constraintStart_toStartOf="@+id/pb_transferring"
+            app:layout_constraintTop_toBottomOf="@+id/txt_receiving_files"
+            tools:listitem="@layout/rv_available_devices_list_item"
+            tools:itemCount="1"/>
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center_horizontal">
+        <ImageView
+                android:id="@+id/share_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/group_351"
+                android:layout_margin="10dp"/>
+
+        <ImageView
+                android:id="@+id/view_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/group_352"
+                android:layout_margin="10dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

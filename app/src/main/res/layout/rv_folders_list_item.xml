@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="3dp"
+             android:background="@color/monk_app_bg">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rectangle_19">
+
+        <ImageView
+                android:id="@+id/icon_folder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_group_66"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="24dp"/>
+
+        <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="35dp">
+
+            <TextView
+                    android:id="@+id/txt_folder"
+                    android:text="Android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="3 | 12-May-2021"/>
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/circle_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ellipse_68"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="end|center"/>
+    </LinearLayout>
+</FrameLayout>

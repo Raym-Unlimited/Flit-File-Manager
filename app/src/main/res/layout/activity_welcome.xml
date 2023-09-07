@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/monk_app_bg"
+        tools:context=".activities.WelcomeActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/txt_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="53dp"
+                android:text="@string/welcome_to_monk_file_explorer"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+                android:id="@+id/img_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="85dp"
+                android:background="@drawable/group_358home_activity_rsc"
+                android:contentDescription="@string/desc_file"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_welcome" />
+
+        <TextView
+                android:id="@+id/txt_desc_features"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:text="@string/beside_the_basic_feature_this_app_also_provide_the_following_feature"
+                android:fontFamily="@font/open_sans"
+                android:textStyle="normal"
+                android:textAlignment="textStart"
+                android:textColor="@color/monk_grey_dark"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_file"/>
+
+        <ImageView
+                android:id="@+id/img_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:contentDescription="@string/sort_image"
+                app:layout_constraintStart_toStartOf="@id/txt_desc_features"
+                app:layout_constraintTop_toBottomOf="@id/txt_desc_features"
+                app:srcCompat="@drawable/ic_group_home_activity_rsc"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:textStyle="normal"
+                android:textAlignment="textStart"
+                android:textColor="@color/monk_grey_dark"
+                android:textSize="12sp"
+                android:layout_marginStart="8dp"
+                android:text="@string/categorising_recent_used_items"
+                app:layout_constraintTop_toTopOf="@id/img_sort"
+                app:layout_constraintBottom_toBottomOf="@id/img_sort"
+                app:layout_constraintStart_toEndOf="@id/img_sort"/>
+
+        <ImageView
+                android:id="@+id/img_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="@id/img_sort"
+                app:layout_constraintTop_toBottomOf="@id/img_sort"
+                app:srcCompat="@drawable/ic_group_home_activity_rsc_1"
+                android:contentDescription="@string/view_icon" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:textStyle="normal"
+                android:textAlignment="textStart"
+                android:textColor="@color/monk_grey_dark"
+                android:textSize="12sp"
+                android:layout_marginStart="8dp"
+                android:text="@string/viewing_and_editing_files"
+                app:layout_constraintTop_toTopOf="@id/img_view"
+                app:layout_constraintBottom_toBottomOf="@id/img_view"
+                app:layout_constraintStart_toEndOf="@id/img_view"/>
+
+        <ImageView
+                android:id="@+id/img_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="@id/img_view"
+                app:layout_constraintTop_toBottomOf="@id/img_view"
+                app:srcCompat="@drawable/ic_group_home_activity_rsc_2"
+                android:contentDescription="@string/scan_icon" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:textStyle="normal"
+                android:textAlignment="textStart"
+                android:textColor="@color/monk_grey_dark"
+                android:textSize="12sp"
+                android:layout_marginStart="8dp"
+                android:text="@string/scanning_and_cleaning_junk"
+                app:layout_constraintTop_toTopOf="@id/img_scan"
+                app:layout_constraintBottom_toBottomOf="@id/img_scan"
+                app:layout_constraintStart_toEndOf="@id/img_scan"/>
+
+        <ImageView
+                android:id="@+id/img_sharing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="@id/img_scan"
+                app:layout_constraintTop_toBottomOf="@id/img_scan"
+                app:srcCompat="@drawable/ic______2home_activity_rsc"
+                android:contentDescription="@string/sharing_icon" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:textStyle="normal"
+                android:textAlignment="textStart"
+                android:textColor="@color/monk_grey_dark"
+                android:textSize="12sp"
+                android:layout_marginStart="8dp"
+                android:text="@string/sharing_files_seamlessly"
+                app:layout_constraintTop_toTopOf="@id/img_sharing"
+                app:layout_constraintBottom_toBottomOf="@id/img_sharing"
+                app:layout_constraintStart_toEndOf="@id/img_sharing"/>
+
+        <TextView
+                android:id="@+id/txt_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                android:text="@string/agree_to_terms_and_conditions"
+                android:fontFamily="@font/open_sans"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@id/img_sharing"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:clickable="true"
+                android:backgroundTint="@color/black"
+                app:layout_constraintTop_toTopOf="@id/txt_agreement"
+                app:layout_constraintBottom_toBottomOf="@id/txt_agreement"
+                app:layout_constraintStart_toEndOf="@id/txt_agreement"/>
+
+        <Button
+                android:id="@+id/button_continue"
+                android:layout_width="170dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="40dp"
+                android:clickable="true"
+                android:text="@string/continue_string"
+                android:fontFamily="@font/open_sans"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@id/txt_desc_features"
+                app:layout_constraintStart_toStartOf="@id/txt_desc_features"
+                app:layout_constraintTop_toBottomOf="@id/txt_agreement"
+                app:srcCompat="@drawable/ic_rectangle_21home_activity_rsc"
+                android:background="@drawable/ic_rectangle_21home_activity_rsc"
+                android:contentDescription="@string/continue_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/monk_app_bg"
+        android:padding="6dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_19"
+            android:orientation="horizontal"
+            android:padding="10dp">
+        <ImageView
+                android:id="@+id/vid_bitmap"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"/>
+        <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/vid_name"
+                    android:text="VID-202107084.mp4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black"/>
+            <TextView
+                    android:id="@+id/vid_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17.23 MB"
+                    android:textColor="@color/monk_grey_dark"/>
+        </LinearLayout>
+        <ImageView
+                android:id="@+id/check_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ellipse_68"
+                android:layout_gravity="center"
+                android:layout_marginStart="80dp"/>
+    </LinearLayout>
+
+</FrameLayout>

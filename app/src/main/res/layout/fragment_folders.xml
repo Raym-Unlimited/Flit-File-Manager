@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/monk_app_bg"
+             tools:context=".fragments.FoldersFragment">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:paddingStart="35dp"
+            android:paddingEnd="35dp">
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_folders"
+                android:layout_width="match_parent"
+                android:layout_height="640dp"
+                tools:listitem="@layout/rv_folders_list_item"/>
+        <Button
+                android:visibility="visible"
+                android:layout_width="128dp"
+                android:layout_height="35dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/ic_rectangle_21home_activity_rsc"
+                android:text="@string/desc_send"
+                android:layout_gravity="center"
+                android:id="@+id/btn_send"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginBottom="16dp"
+                android:text="NO RECORDS FOUND"
+                android:textSize="23sp"
+                android:textColor="@color/monk_grey_light"
+                android:fontFamily="@font/open_sans"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/undraw_empty_cart_co35_1"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+    </LinearLayout>
+
+</FrameLayout>
