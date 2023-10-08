@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:fillViewport="false"
         android:background="@color/monk_app_bg"
-        tools:context=".ui.home.HomeFragment">
+        tools:context=".views.ui.home.HomeFragment">
     <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraint_layout"
             android:layout_width="match_parent"

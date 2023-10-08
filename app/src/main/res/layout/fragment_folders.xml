@@ -4,7 +4,7 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              android:background="@color/monk_app_bg"
-             tools:context=".fragments.FoldersFragment">
+             tools:context=".views.fragments.FoldersFragment">
 
     <LinearLayout
             android:layout_width="match_parent"

@@ -1,32 +1,23 @@
 package com.raym.flitfilemanager;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
-import android.widget.Toast;
-import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import com.raym.flitfilemanager.activities.filesharing.ReceiveConnectionActivity;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.raym.flitfilemanager.databinding.ActivityHomeBinding;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 
 public class HomeActivity extends AppCompatActivity {
 
     public static final int REQUEST_CODE = 10000;
-    private ActivityHomeBinding binding;
 
-//    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+    //    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +25,7 @@ public class HomeActivity extends AppCompatActivity {
 
 //        checkPermission();
 
-        binding = ActivityHomeBinding.inflate(getLayoutInflater());
+        com.raym.flitfilemanager.databinding.ActivityHomeBinding binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -51,6 +42,7 @@ public class HomeActivity extends AppCompatActivity {
 //    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
     protected void onResume() {
+        //TODO: Check and request necessary permissions
         super.onResume();
 //        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
 //            Toast.makeText(this, "Permission Granted Already", Toast.LENGTH_SHORT).show();

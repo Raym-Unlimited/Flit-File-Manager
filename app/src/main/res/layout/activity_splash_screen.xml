@@ -9,7 +9,7 @@
         android:orientation="vertical"
         android:layout_gravity="center_vertical"
         android:gravity="center_vertical"
-        tools:context=".activities.SplashScreenActivity">
+        tools:context=".views.activities.SplashScreenActivity">
 
     <ImageView
             android:layout_width="150dp"

@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/monk_app_bg"
-        tools:context=".ui.toolkit.ToolkitFragment">
+        tools:context=".views.ui.toolkit.ToolkitFragment">
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">

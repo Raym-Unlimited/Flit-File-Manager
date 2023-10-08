@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:background="@color/monk_app_bg"
         android:fillViewport="false"
-        tools:context=".ui.filesharing.FileSharingFragment">
+        tools:context=".views.ui.filesharing.FileSharingFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/monk_app_bg"
-        tools:context=".activities.filesharing.QRInviteActivity">
+        tools:context=".views.activities.filesharing.QRInviteActivity">
 
     <TextView
             android:id="@+id/tv_download_from_ps"

@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/monk_app_bg"
-        tools:context=".activities.filesharing.InviteActivity">
+        tools:context=".views.activities.filesharing.InviteActivity">
 
     <ImageView
             android:id="@+id/btn_back"
