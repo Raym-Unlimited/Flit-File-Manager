@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import com.genonbeta.android.framework.widget.PowerfulActionMode;
+//import com.genonbeta.android.framework.widget.PowerfulActionMode;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
@@ -30,7 +30,7 @@ public class QRInviteActivity extends AppCompatActivity {
 
     public static final int REQUEST_PERMISSION_ALL = 1;
     private static final int PERMISSION_REQUEST_CODE = 200;
-    private PowerfulActionMode mActionMode;
+//    private PowerfulActionMode mActionMode;
     private IntentFilter mFilter = new IntentFilter();
     private BroadcastReceiver mReceiver = null;
     private long mExitPressTime;

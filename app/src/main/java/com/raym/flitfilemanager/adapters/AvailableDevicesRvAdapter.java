@@ -66,7 +66,7 @@ public class AvailableDevicesRvAdapter extends RecyclerView.Adapter<AvailableDev
                 mDevice = searchForReceiverActivity.mDeviceArray[position];
                 mConfig = new WifiP2pConfig();
                 mConfig.deviceAddress = mDevice.deviceAddress;
-                if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED || ActivityCompat.checkSelfPermission(AvailableDevicesRvAdapter.this, Manifest.permission.NEARBY_WIFI_DEVICES) != PackageManager.PERMISSION_GRANTED) {
+                if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED || ActivityCompat.checkSelfPermission(mContext, Manifest.permission.NEARBY_WIFI_DEVICES) != PackageManager.PERMISSION_GRANTED) {
                     // TODO: Consider callingI
                     //    ActivityCompat#requestPermissions
                     // here to request the missing permissions, and then overriding
